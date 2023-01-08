@@ -1,5 +1,5 @@
 class NotesController < ApplicationController
-  before_action :set_note, only: %i[ show  ]
+  before_action :set_note, only: %i[ show edit destroy update ]
 
   # GET /notes or /notes.json
   def index

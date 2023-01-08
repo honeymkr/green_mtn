@@ -1,27 +1,27 @@
 <div id="<%= dom_id note %>">
   <p class="my-5">
-    <strong class="block font-medium mb-1">Title:</strong>
-    <%= note.title %>
+    <strong class="block font-medium mb-1">Title: <%= note.title %> </strong>
+    
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
-    <%= note.description %>
+    <strong class="block font-medium mb-1">Description: <%= note.description %></strong>
+    
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Author:</strong>
-    <%= note.author %>
+    <strong class="block font-medium mb-1">Author:  <%= note.author %></strong>
+   
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Date:</strong>
-    <%= note.date %>
+    <strong class="block font-medium mb-1">Date:  <%= note.date %></strong>
+   
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Body:</strong>
-    <%= note.body %>
+    <strong class="block font-medium mb-1">Body: <%= note.body %></strong>
+    
   </p>
 
   <% if action_name != "show" %>
