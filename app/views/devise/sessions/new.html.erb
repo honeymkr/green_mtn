@@ -1,5 +1,11 @@
-<h2>Log in</h2>
+<div>
 
+<h2>Log in</h2>
+<h3>Find me in views/devise/sessions/new.html</h3>
+
+</div>
+
+<div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -24,3 +30,6 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
+
