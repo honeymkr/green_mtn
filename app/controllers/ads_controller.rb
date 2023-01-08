@@ -1,6 +1,7 @@
 class AdsController < ApplicationController
   before_action :set_ad, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!
+  
   # GET /ads or /ads.json
   def index
     @ads = Ad.all
