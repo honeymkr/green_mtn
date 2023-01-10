@@ -1,32 +1,23 @@
 <div id="<%= dom_id ad %>">
   <p class="my-5">
-    <strong class="block font-medium mb-1">Title:</strong>
-    <%= ad.title %>
+    <strong class="block font-medium mb-1"><%= ad.title %> ~ $ <%= ad.price %></strong>
+    </p>
+
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description: <%= ad.description %> </strong>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Price:</strong>
-    <%= ad.price %>
+    <strong class="block font-medium mb-1">Contact:   <%= ad.contact %> </strong>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
-    <%= ad.description %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Contact:</strong>
-    <%= ad.contact %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Location:</strong>
-    <%= ad.location %>
+    <strong class="block font-medium mb-1">Location: <%= ad.location %> </strong>
   </p>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this ad", ad, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this ad', edit_ad_path(ad), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Check It Out", ad, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>
